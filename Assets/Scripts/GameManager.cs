@@ -21,17 +21,12 @@ public class GameManager : MonoBehaviour
     [Button("Llenar Tareas")]
     public void FillTasks()
     {
-        taskQueue.Enqueue(new Task(Task.taskType.Shoot), 3);
-        taskQueue.Enqueue(new Task(Task.taskType.MoveLeft), 1);
-        taskQueue.Enqueue(new Task(Task.taskType.MoveRight), 0);
-        taskQueue.Enqueue(new Task(Task.taskType.BarrelRoll), 2);
+        taskQueue.Enqueue(new Task(Task.taskType.Shoot), 0);
+        taskQueue.Enqueue(new Task(Task.taskType.MoveLeft), 2);
+        taskQueue.Enqueue(new Task(Task.taskType.MoveRight), 3);
+        taskQueue.Enqueue(new Task(Task.taskType.BarrelRoll), 1);
 
         ShowCurrentTask();
-    }
-    [Button("Mostrar Tareas")]
-    public void ShowTasks()
-    {
-        taskQueue.ReadQueue();
     }
     [Button("Completar Tarea")]
     public void CompleteTask()
