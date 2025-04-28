@@ -1,5 +1,4 @@
 using UnityEngine;
-using static Task;
 
 public class Task 
 {
@@ -37,8 +36,6 @@ public class Task
                 return "Muévete a la izquierda.";
             case taskType.MoveRight:
                 return "Muévete a la derecha.";
-            case taskType.BarrelRoll:
-                return "Haz un giro!!.";
             case taskType.SwapModes:
                 return "Cambia de modo.";
             default:
